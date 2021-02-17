@@ -9,55 +9,53 @@
   flex-flow: row-reverse wrap;
   justify-content: space-around;
   text-align: right;
-  margin-top: 10vh;
+  min-width: 500px;
+  margin-top: 5%;
+  white-space: nowrap;
 }
 
 .text-wrapper {
   font-family: 'Lato', sans-serif;
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .title {
   color: #1b1b1b;
-  font-size: 12vw;
-  white-space: nowrap;
+  font-size: clamp(7rem, 12vw, 15rem);
 }
 
 .sub {
-  font-size: 2.45vw;
+  font-size: clamp(1.5rem, 2.45vw, 3rem);
   font-weight: 500;
   color: #808080;
-  margin-right: 16vw;
+  margin-right: 34%;
   line-height: 2px;
-  white-space: nowrap;
 }
 
 .banner {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 2.45vw;
+  font-size: clamp(1.5rem, 2.45vw, 3rem);
   font-weight: 900;
   background-color: #974545;
   padding: 8px;
   transform: rotate(355deg);
   margin-left: 68%;
   margin-top: -7%;
-  white-space: nowrap;
 }
 
 .desc, .btn-link {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3vw;
+  font-size: clamp(0.8rem ,1.3vw, 3rem);
 }
 
 .desc {
-  margin-top: 7vh;
-  margin-bottom: 7vh;
-  margin-left: 1vw;
+  margin-top: 12%;
+  margin-bottom: 8%;
+}
+
+.desc, span {
+  display: block;
 }
 
 .btn-link {
@@ -67,35 +65,6 @@
   color: #008b8b;
 }
 
-.image {
-  margin-top: 2.5vh;
-}
-
 .fat-hanz {
   min-block-size: 35vw;
-}
-
-@media only screen and (max-width: 1699px) {
-
-  .container {
-    margin-top: 5vh;
-  }
-
-  .title {
-    font-size: 17vw;
-  }
-
-  .sub {
-    font-size: 3.5vw;
-    margin-right: 22vw;
-  }
-
-  .desc, .btn-link { 
-    font-size: 2vw;
-  }
-
-  .desc {
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-  }
 }
